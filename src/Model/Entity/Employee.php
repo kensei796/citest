@@ -2,6 +2,8 @@
 namespace App\Model\Entity;
 
 use Cake\ORM\Entity;
+use Cake\Auth\DefaultPasswordHasher;
+
 
 /**
  * Employee Entity
@@ -42,4 +44,8 @@ class Employee extends Entity
         'favorites' => true,
         'lending_statuses' => true,
     ];
-}
+
+    protected function _setPassword($password){
+        return (new DefaultPasswordHasher)->hash($password);
+    }
+ }

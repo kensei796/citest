@@ -1,0 +1,22 @@
+
+header .headlines{
+    line-height: 80px;
+    float: left;
+}
+header .headline {
+    line-height: 50px;
+    float: left;
+    font-size:70px;
+}
+.nav-list {
+    line-height: 100px;
+    float: right;
+    margin-left: 30px;
+    list-style: none;
+}
+
+.nav-list-item {
+    display: inline-block;
+    color:black;
+
+}
